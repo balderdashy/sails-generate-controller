@@ -1,0 +1,36 @@
+{
+  "name": "sails-generate-controller",
+  "version": "0.10.0",
+  "description": "Generate a controller for Sails.",
+  "main": "gen/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "controller",
+    "generator",
+    "sails",
+    "generate",
+    "plugin"
+  ],
+  "author": "balderdashy",
+  "license": "MIT",
+  "dependencies": {
+  	"lodash": ">=2.4.x",
+  	"merge-defaults": ">=0.1.0"
+  },
+  "devDependencies": {
+    "sails-generate": "*",
+    "reportback": "*",
+    "fs-extra": "*",
+    "root-require": ">=0.2.x"
+  },
+  "sails": {
+  	"generator": {
+	 		"name": "controller",
+	 		"behavior": "overrides `sails generate controller`",
+	 		"sailsVersion": "~0.10.0",
+	 		"main": "lib/index"
+  	}
+  }
+}
