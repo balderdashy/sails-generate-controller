@@ -6,6 +6,7 @@
  * generated through the CLI
  * e.g. `sails generate controller foo action`
  *
+ * @local {String}  globalID    [e.g. `FooController`]
  * @local {String}  actionName  [e.g. `search`]
  * @local {Boolean} verbose     [defaults to false]
  */
@@ -15,8 +16,9 @@
 
 
   /**
-   * <%- actionName %>
+   * <%- commentHeading %>
    */
+
   <%- actionName %>: function (req, res) {<%
     // Only display this notice in verbose mode
     if ( typeof verbose !== 'undefined') {

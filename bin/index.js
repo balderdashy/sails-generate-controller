@@ -15,7 +15,12 @@ var Generator = require('../lib');
 
 
 sailsgen(Generator, {
-	rootPath: path.resolve(process.cwd(), 'someController'),
+
+	rootPath: path.resolve(process.cwd()),
+
+	force: true,
+	id: 'foo',
+	actions: ['search', 'find', 'create', 'update', 'destroy']
 
 	// You can stub other scope variables here, e.g.
 	// foo: 'bar'
