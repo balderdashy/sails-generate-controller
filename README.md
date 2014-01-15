@@ -16,7 +16,7 @@ $ npm install sails-generate-controller
 #### On the command line
 
 ```sh
-$ sails generate controller 
+$ sails generate controller
 ```
 
 #### In a node script
@@ -46,7 +46,7 @@ $ npm install
 $ node ./bin
 ```
 
-`bin/index.js` is a simple script, bundled only for convenience, that runs the generator with hard-coded scope variables.  Feel free to modify that file however you for convenience.  Please see `CONTRIBUTING.md` for more information on overriding/enhancing generators.
+`bin/index.js` is a simple script, bundled only for convenience, that runs the generator with hard-coded scope variables.  Feel free to modify that file however you like!  Please see `CONTRIBUTING.md` for more information on overriding/enhancing generators.
 
 
 
