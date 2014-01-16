@@ -5,21 +5,27 @@
 
 A `controller` generator for use with the Sails command-line interface.
 
+
 ### Installation
 
+Certain generators are installed by default in Sails, but they can be overridden.  Check the [Sails docs](http://sailsjs.org/#!documentation) for information on installing generator overrides / custom generators.
+
+<!--
 ```sh
 $ npm install sails-generate-controller
 ```
+-->
 
-## Usage
 
-#### On the command line
+### Production Usage
+
+##### On the command line
 
 ```sh
-$ sails generate controller
+$ sails generate controller 
 ```
 
-#### In a node script
+##### In a node script
 
 ```javascript
 var path = require('path');
@@ -35,7 +41,7 @@ sailsgen(require('sails-generate-controller'), scope, function (err) {
 ```
 
 
-#### Development
+### Development
 
 To get started quickly and see this generator in action, run the `bin/index.js` script:
 
@@ -46,7 +52,7 @@ $ npm install
 $ node ./bin
 ```
 
-`bin/index.js` is a simple script, bundled only for convenience, that runs the generator with hard-coded scope variables.  Feel free to modify that file however you like!  Please see `CONTRIBUTING.md` for more information on overriding/enhancing generators.
+`bin/index.js` is a simple script, bundled only for convenience, that runs the generator with hard-coded scope variables.  Please feel free to modify that file however you like!  Also see `CONTRIBUTING.md` for more information on overriding/enhancing generators.
 
 
 
