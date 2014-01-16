@@ -19,8 +19,8 @@ sailsgen(Generator, {
 	rootPath: path.resolve(process.cwd()),
 
 	force: true,
-	id: 'foo',
-	actions: ['search', 'find', 'create', 'update', 'destroy']
+	id: process.argv[2],
+	actions: process.argv.length > 3 ? process.argv.slice(3) : ['search', 'find', 'create', 'update', 'destroy']
 
 	// You can stub other scope variables here, e.g.
 	// foo: 'bar'
