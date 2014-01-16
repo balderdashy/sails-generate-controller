@@ -1,17 +1,4 @@
-<%
 /**
- * Boilerplate controller
- *
- * @local filename
- 		-> e.g. "SomeController.js"
-
- * @local actions   [stringified code snippets]
- 		-> e.g. "search: function (req, res){ ... }"
-
- * This is the template used when generating controllers via the CLI
- * e.g. `sails generate controller foo`
- */
-%>/**
  * <%= filename %> <% /*
  *                 A set of functions called `actions`.
  *
@@ -27,18 +14,6 @@
  * @docs        :: http://sailsjs.org/#!documentation/controllers
  */
 
-module.exports = {<%
-  /**
-   * Actions
-   *
-   * Code that should be run when Sails receives an HTTP request
-   * or a properly structured message from Socket.io.
-   *
-   * e.g.
-   * sayHello: function (req, res) {
-   *   res.send('Hello world!');
-   * }
-   */
-  %>  <%- actions %>
-
+module.exports = {
+	<%- actions %>
 };
