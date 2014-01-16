@@ -2,7 +2,7 @@
   "name": "sails-generate-controller",
   "version": "0.10.1",
   "description": "Generate a controller for Sails.",
-  "main": "gen/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "mocha"
   },
