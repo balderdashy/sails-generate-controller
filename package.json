@@ -25,11 +25,9 @@
     "reportback": "*",
     "fs-extra": "*"
   },
-  "sails": {
-    "generator": {
+  "sailsGenerator": {
       "type": "controller",
       "behavior": "overrides `sails generate controller`",
       "sailsVersion": "~0.10.0"
-    }
   }
 }
