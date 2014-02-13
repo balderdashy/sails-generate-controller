@@ -27,10 +27,9 @@
   },
   "sails": {
     "generator": {
-      "name": "controller",
+      "type": "controller",
       "behavior": "overrides `sails generate controller`",
-      "sailsVersion": "~0.10.0",
-      "main": "lib/index"
+      "sailsVersion": "~0.10.0"
     }
   }
 }
