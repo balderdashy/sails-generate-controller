@@ -1,5 +1,4 @@
-/**
- * <%= filename %> <% /*
+<% /*
  *                 A set of functions called `actions`.
  *
  *                 Actions contain code telling Sails how to respond to a certain type of request.
@@ -8,7 +7,8 @@
  *                 You can configure the blueprint URLs which trigger these actions (`config/controllers.js`)
  *                 and/or override them with custom routes (`config/routes.js`)
  *
- *                 NOTE: The code you write here supports both HTTP and Socket.io automatically. */ %>
+ *                 NOTE: The code you write here supports both HTTP and Socket.io automatically. */%><% if (lang === 'js') { %>/**
+ * <%= filename %>
  *
  * @description ::
  * @docs        :: http://sailsjs.org/#!documentation/controllers
@@ -17,3 +17,12 @@
 module.exports = {
 	<%- actions %>
 };
+<% } else if (lang === 'coffee') { %> # <%= filename %>
+ #
+ # @description ::
+ # @docs        :: http://sailsjs.org/#!documentation/controllers
+<% if (actions.length > 0) { %>
+module.exports =
+	<%- actions %>
+<%} else { %>
+module.exports = {}<%}%><%}%>
