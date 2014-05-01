@@ -1,12 +1,9 @@
 <% if (lang === 'js') { %>
 
 
-
-
   /**
    * <%- commentHeading %>
    */
-
   <%- actionName %>: function (req, res) {<%
     // Only display this notice in verbose mode
     if ( typeof verbose !== 'undefined') {
@@ -24,9 +21,7 @@
 <%} else if (lang === 'coffee') { %>
 
 
-
-
- # <%- commentHeading %>
+  # <%- commentHeading %>
 
   <%- actionName %>: (req, res) -><%
     // Only display this notice in verbose mode

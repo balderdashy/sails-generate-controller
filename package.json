@@ -18,7 +18,8 @@
   "dependencies": {
     "lodash": ">=2.4.x",
     "merge-defaults": ">=0.1.0",
-    "underscore.string": "~2.3.3"
+    "underscore.string": "~2.3.3",
+    "pluralize": "0.0.9"
   },
   "devDependencies": {
     "sails-generate": "*",

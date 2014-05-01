@@ -8,19 +8,19 @@
  *                 and/or override them with custom routes (`config/routes.js`)
  *
  *                 NOTE: The code you write here supports both HTTP and Socket.io automatically. */%><% if (lang === 'js') { %>/**
- * <%= filename %>
+ * <%= entity %>
  *
- * @description ::
- * @docs        :: http://sailsjs.org/#!documentation/controllers
+ * @description :: Server-side logic for managing <%= resourcePlural %>
+ * @help        :: See http://links.sailsjs.org/docs/controllers
  */
 
 module.exports = {
 	<%- actions %>
 };
-<% } else if (lang === 'coffee') { %> # <%= filename %>
+<% } else if (lang === 'coffee') { %> # <%= entity %>
  #
- # @description ::
- # @docs        :: http://sailsjs.org/#!documentation/controllers
+ # @description :: Server-side logic for managing <%= resourcePlural %>
+ # @help        :: See http://links.sailsjs.org/docs/controllers
 <% if (actions.length > 0) { %>
 module.exports =
 	<%- actions %>
