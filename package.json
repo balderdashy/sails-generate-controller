@@ -1,6 +1,6 @@
 {
   "name": "sails-generate-controller",
-  "version": "0.10.3",
+  "version": "0.10.4",
   "description": "Generate a controller for Sails.",
   "main": "lib/index.js",
   "scripts": {
@@ -26,8 +26,8 @@
     "fs-extra": "*"
   },
   "sailsGenerator": {
-      "type": "controller",
-      "behavior": "overrides `sails generate controller`",
-      "sailsVersion": "~0.10.0"
+    "type": "controller",
+    "behavior": "overrides `sails generate controller`",
+    "sailsVersion": "~0.10.0"
   }
 }
