@@ -15,7 +15,7 @@
      */
     <% } %>
     return res.json({
-      todo: 'Not implemented yet!'
+      todo: '<%=actionName%>() is not implemented yet!'
     });
   }
 <%} else if (lang === 'coffee') { %>
@@ -32,5 +32,5 @@
      # and support the same interface for properly structured Socket.io messages.
     <% } %>
     res.json
-      todo: 'Not implemented yet!'
+      todo: '<%=actionName%>() is not implemented yet!'
 <%}%>

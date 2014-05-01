@@ -6,9 +6,9 @@
 A `controller` generator for use with the Sails command-line interface.
 
 
-### Installation
+### Installing this generator
 
-Certain generators are installed by default in Sails, but they can be overridden.  Check the [Sails docs](http://sailsjs.org/#!documentation) for information on installing generator overrides / custom generators.
+> Certain generators are installed by default in Sails, but they can be overridden.  Check the [Sails docs](http://sailsjs.org/#!documentation) for information on installing generator overrides / custom generators.
 
 <!--
 ```sh
@@ -17,43 +17,51 @@ $ npm install sails-generate-controller
 -->
 
 
-### Production Usage
+##### For a particular app
 
-##### On the command line
-
-```sh
-$ sails generate controller 
-```
-
-##### In a node script
-
-```javascript
-var path = require('path');
-var sailsgen = require('sails-generate');
-var scope = {
-	rootPath: path.resolve(__dirname)
-};
-sailsgen(require('sails-generate-controller'), scope, function (err) {
-	if (err) throw err;
-
-	// It worked.
-});
-```
-
-
-### Development
-
-To get started quickly and see this generator in action, run the `bin/index.js` script:
+In your app directory:
 
 ```sh
-$ git clone YOUR_FORK_OF_THIS_REPO sails-generate-controller-fork
-$ cd sails-generate-controller-fork
-$ npm install
-$ node ./bin
+$ npm install sails-generate-controller
 ```
 
-`bin/index.js` is a simple script, bundled only for convenience, that runs the generator with hard-coded scope variables.  Please feel free to modify that file however you like!  Also see `CONTRIBUTING.md` for more information on overriding/enhancing generators.
+Then edit this project's `./.sailsrc` file (see below for details).  If no local `.sailsrc` file exists yet, you can just create one.
 
+
+##### As the default for your global Sails install
+
+In your $HOME folder (i.e. `~/`):
+
+```sh
+$ npm install sails-generate-controller
+```
+
+Then edit your global `~/.sailsrc` file (see below for details).  If no global `.sailsrc` file exists yet, you can just create one.
+
+
+##### Configuring a `.sailsrc` file to use this generator
+
+Add or replace the module used for generating a "controller":
+
+```json
+{
+	"generators": {
+		"modules": {
+			"controller": "sails-generate-controller"
+		}
+	}
+}
+```
+
+
+
+### Usage
+
+Now that the generator is installed, you can test it:
+
+```sh
+$ sails generate controller foobar
+```
 
 
 ### Questions?
