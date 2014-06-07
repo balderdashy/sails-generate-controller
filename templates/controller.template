@@ -21,8 +21,8 @@ module.exports = {
  #
  # @description :: Server-side logic for managing <%= resourcePlural %>
  # @help        :: See http://links.sailsjs.org/docs/controllers
-<% if (actions.length > 0) { %>
+<% if (actionFns.length > 0) { %>
 module.exports =
-	<%- actions %>
+	<%- actionFns %>
 <%} else { %>
 module.exports = {}<%}%><%}%>
