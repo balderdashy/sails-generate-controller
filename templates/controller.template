@@ -15,7 +15,7 @@
  */
 
 module.exports = {
-	<%- actions %>
+	<%- actionFns %>
 };
 <% } else if (lang === 'coffee') { %> # <%= entity %>
  #
