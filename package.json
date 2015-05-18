@@ -1,6 +1,6 @@
 {
   "name": "sails-generate-controller",
-  "version": "0.10.7",
+  "version": "0.10.8",
   "description": "Generate a controller for Sails.",
   "main": "lib/index.js",
   "scripts": {
