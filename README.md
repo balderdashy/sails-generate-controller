@@ -8,7 +8,7 @@ A `controller` generator for use with the Sails command-line interface.
 
 ### Installing this generator
 
-> Certain generators are installed by default in Sails, but they can be overridden.  Check the [Sails docs](http://sailsjs.org/#!documentation) for information on installing generator overrides / custom generators.
+> Certain generators are installed by default in Sails, but they can be overridden.  Check the [Sails docs](http://sailsjs.org/documentation) for information on installing generator overrides / custom generators.
 
 <!--
 ```sh
@@ -87,4 +87,3 @@ See `FAQ.md`.
 [Mike McNeil](http://michaelmcneil.com), [Balderdash](http://balderdash.co) & contributors
 
 [Sails](http://sailsjs.org) is free and open-source under the [MIT License](http://sails.mit-license.org/).
-

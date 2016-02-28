@@ -15,7 +15,7 @@ $ npm install sails-generate-controller
 
 ### Where is the documentation?
 + Documentation for this module is in the README.md file.
-+ [Docs for the latest stable npm release of Sails are on the website](http://sailsjs.org/#!documentation)
++ [Docs for the latest stable npm release of Sails are on the website](http://sailsjs.org/documentation)
 
 
 
