@@ -16,8 +16,7 @@
   "author": "Mike McNeil",
   "license": "MIT",
   "dependencies": {
-    "lodash": "3.10.1",
-    "pluralize": "0.0.9"
+    "lodash": "3.10.1"
   },
   "sailsGenerator": {
     "type": "controller",
