@@ -26,23 +26,4 @@ else if (lang === 'coffee') { %> # <%= entity %>
 <% if (actionFns.length > 0) { %>
 module.exports =
   <%- actionFns %>
-<% }
-//  ╔╦╗╦ ╦╔═╗╔═╗╔═╗╔═╗╦═╗╦╔═╗╔╦╗
-//   ║ ╚╦╝╠═╝║╣ ╚═╗║  ╠╦╝║╠═╝ ║
-//   ╩  ╩ ╩  ╚═╝╚═╝╚═╝╩╚═╩╩   ╩
-else if (lang === 'typescript') { %>/**
- * <%= entity %>
- *
- * @description :: Server-side logic for managing <%= resourcePlural %>
- * @help        :: See http://sailsjs.com/documentation/concepts/controllers
- */
-
-module.exports = {
-  <%- actionFns %>
-};
-<% }
-//  ╔╦╗╦╔═╗╔═╗
-//  ║║║║╚═╗║
-//  ╩ ╩╩╚═╝╚═╝
-else { %>
-module.exports = {}<%}%><%}%>
+<% } %>
