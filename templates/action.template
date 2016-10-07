@@ -9,9 +9,9 @@ if (lang === 'js') { %>
 
 
   /**
-   * <%- commentHeading %>
+   * <%= commentHeading %>
    */
-  <%- actionName %>: function (req, res) {<%
+  <%= actionName %>: function (req, res) {<%
     // Only display this notice in verbose mode
     if ( typeof verbose !== 'undefined') {
     %>
@@ -32,9 +32,9 @@ if (lang === 'js') { %>
 else if (lang === 'coffee') { %>
 
 
-  # <%- commentHeading %>
+  # <%= commentHeading %>
 
-  <%- actionName %>: (req, res) -><%
+  <%= actionName %>: (req, res) -><%
     // Only display this notice in verbose mode
     if ( typeof verbose !== 'undefined') {
     %>

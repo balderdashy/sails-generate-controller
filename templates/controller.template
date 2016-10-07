@@ -13,7 +13,7 @@ if (lang === 'js') { %>/**
  */
 
 module.exports = {
-  <%- actionFns %>
+  <%= actionFns %>
 };
 <% }
 //  ╔═╗╔═╗╔═╗╔═╗╔═╗╔═╗  ╔═╗╔═╗╦═╗╦╔═╗╔╦╗
@@ -25,7 +25,7 @@ else if (lang === 'coffee') { %> # <%= entity %>
  # @help        :: See http://sailsjs.com/documentation/concepts/controllers
 module.exports =
   <% if (actionFns.length > 0) {
-  %><%- actionFns %><% }
+  %><%= actionFns %><% }
   else { %>
   {}
   <% } %>
