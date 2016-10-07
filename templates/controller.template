@@ -23,7 +23,10 @@ else if (lang === 'coffee') { %> # <%= entity %>
  #
  # @description :: Server-side logic for managing <%= resourcePlural %>
  # @help        :: See http://sailsjs.com/documentation/concepts/controllers
-<% if (actionFns.length > 0) { %>
 module.exports =
-  <%- actionFns %>
+  <% if (actionFns.length > 0) {
+  %><%- actionFns %><% }
+  else { %>
+  {}
+  <% } %>
 <% } %>
