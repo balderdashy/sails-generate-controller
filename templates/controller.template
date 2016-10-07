@@ -11,18 +11,18 @@
  * <%= entity %>
  *
  * @description :: Server-side logic for managing <%= resourcePlural %>
- * @help        :: See http://sailsjs.org/#!/documentation/concepts/Controllers
+ * @help        :: See http://sailsjs.com/#!/documentation/concepts/Controllers
  */
 
 module.exports = {
-	<%- actionFns %>
+  <%- actionFns %>
 };
 <% } else if (lang === 'coffee') { %> # <%= entity %>
  #
  # @description :: Server-side logic for managing <%= resourcePlural %>
- # @help        :: See http://sailsjs.org/#!/documentation/concepts/Controllers
+ # @help        :: See http://sailsjs.com/#!/documentation/concepts/Controllers
 <% if (actionFns.length > 0) { %>
 module.exports =
-	<%- actionFns %>
+  <%- actionFns %>
 <%} else { %>
 module.exports = {}<%}%><%}%>
